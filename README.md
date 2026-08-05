@@ -1,4 +1,4 @@
-# CREST-S: Channel-Refined Water Classification for River Width Extraction from Sentinel-2
+# Improving River Width Estimation from Sentinel-2 with Snow and Sediment Identification Indices
  
 Code and data supporting:
  
@@ -8,7 +8,7 @@ Code and data supporting:
  
 River width is a key input to hydrological and land-surface models, but satellite-based width extraction is confounded by land covers that spectrally resemble water — snow, turbid sediment, and dense riparian vegetation. This repository accompanies a study that benchmarks four Sentinel-2-compatible water classification algorithms (Zou multi-condition classifier, WI2015, MuWI, and an ultra-blue MNDWI variant), each with and without a snow-and-sediment (SS) environmental guard, against independent river width references.
  
-**Key result:** the Zou classifier combined with the SS guard (CREST-S(Zou)) achieved the best overall performance (NSE = 0.504, R² = 0.594, RMSE = 117.9 m) against USGS gauge widths for channels ≥30 m across the conterminous United States (2017–2024), validated against 655,593 field measurements at 5,750 stations, with a secondary check against the RiverScope PlanetScope-derived benchmark.
+**Key result:** the Zou classifier modified with SSI (SSI(Zou)) achieved the best overall performance (NSE = 0.504, R² = 0.594, RMSE = 117.9 m) against USGS gauge widths for channels ≥30 m across the conterminous United States (2017–2024), validated against 655,593 field measurements at 5,750 stations, with a secondary check against the RiverScope PlanetScope-derived benchmark.
 
 ## Data Sources
  
